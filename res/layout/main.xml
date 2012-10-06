@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    android:id="@+id/theTextView"
+    android:visibility="gone"
+    />        
+        <ScrollView android:layout_width="fill_parent" android:id="@+id/scrollView1" android:layout_height="wrap_content">
+            <LinearLayout android:id="@+id/containerMainImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical">
+		        <RelativeLayout android:id="@+id/containerNav" android:visibility="gone" android:layout_gravity="center" android:layout_centerInParent="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		            <LinearLayout  android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerHorizontal="true">
+		            	<ImageButton android:id="@+id/btnSelectionBack" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/back" android:layout_toRightOf="@+id/btnSelectionHome" android:layout_alignTop="@+id/btnSelectionHome" android:layout_alignBottom="@+id/btnSelectionHome" android:layout_marginRight="10px"></ImageButton>
+		                <ImageButton android:id="@+id/btnSelectionHome" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/home" android:layout_marginLeft="10px"></ImageButton>
+		            </LinearLayout>
+		        </RelativeLayout>            
+                <RelativeLayout android:id="@+id/relativeLayout1" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_width="fill_parent">
+                        <ImageView android:id="@+id/imageMain" android:src="@drawable/icon" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"></ImageView>
+                    </LinearLayout>
+                </RelativeLayout>
+                <Gallery android:id="@+id/containerGallery" android:layout_width="fill_parent" android:layout_height="wrap_content"></Gallery>
+		        <RelativeLayout android:id="@+id/containerSelection" android:visibility="gone" android:layout_gravity="center" android:layout_centerInParent="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		            <LinearLayout  android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerHorizontal="true">
+		            	<ImageButton android:id="@+id/btnSelectionYes" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/selection_yes" android:layout_toRightOf="@+id/btnSelectionNo" android:layout_alignTop="@+id/btnSelectionNo" android:layout_alignBottom="@+id/btnSelectionNo" android:layout_marginRight="10px"></ImageButton>
+		                <ImageButton android:id="@+id/btnSelectionNo" android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/selection_no" android:layout_marginLeft="10px"></ImageButton>
+		            </LinearLayout>
+		        </RelativeLayout>            
+            </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>
